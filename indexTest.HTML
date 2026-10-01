@@ -51,33 +51,54 @@
     <main>
         <!-- CAROUSEL in ------------------------------------------------------------------->
         <section id="inicio">
+
             <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
+                <div class="carousel-inner bg-dark">
                     <!-- Carousel 01 ------------------------------------->
                     <div class="carousel-item active bg-success text-white text-center p-5">
-                        <h1>Deixe sua casa mais verde.</h1>
+                        <!-- d-inline-block" style="transform: scaleX(-1) para inverter o icone -->
+                        <h1><i class="bi bi-leaf me-3 fs-1 "></i>Deixe sua casa mais verde.<i
+                                class="bi bi-leaf ms-3 fs-1 d-inline-block" style="transform: scaleX(-1)"></i></h1>
                         <p class="fs-5">Platas selecionadas para transformar seus ambientes.</p>
-                        <a href="#produtos" class="btn btn-light" >Conhecer produtos</a>
-                        
+                        <a href="#produtos" class="btn btn-light"><i class="bi bi-dice-1-fill me-2 fs-5"></i>Produtos<i
+                                class="bi bi-dice-1 ms-2 fs-5"></i></a>
+
                     </div>
 
                     <!-- Carousel 02 ------------------------------------->
-                    <div class="carousel-item active bg-warning text-dark text-center p-5">
-                        <h1>Semana dos vasos.</h1>
+                    <div class="carousel-item bg-warning text-dark text-center p-5">
+                        <h1><i class="bi bi-tree me-3 fs-1"></i>Semana dos vasos.<i class="bi bi-tree ms-3 fs-1"></i>
+                        </h1>
                         <p class="fs-5">Ofertas especiais em vasos e acessórios.</p>
-                        <a href="#produtos" class="btn btn-dark" >Ver ofertas</a>
+                        <a href="#produtos" class="btn btn-dark"><i class="bi bi-dice-2-fill me-2 fs-5"></i>Ofertas<i
+                                class="bi bi-dice-2 ms-2 fs-5"></i></a>
+                    </div>
+
+
+                    <!-- Carousel 03 ------------------------------------->
+                    <div class="carousel-item bg-danger text-white text-center p-5">
+                        <!-- d-inline-block" style="transform: scaleX(-1) para inverter o icone -->
+                        <h1><i class="bi bi-moon-stars me-3 fs-1"></i>Compre com Saga.<i
+                                class="bi bi-moon-stars ms-3 fs-1 d-inline-block" style="transform: scaleX(-1)"></i>
+                        </h1>
+                        <p class="fs-5">Ofertas especiais em explosões galáticas.</p>
+                        <a href="#produtos" class="btn bg-white text-danger"><i
+                                class="bi bi-dice-3-fill me-2 fs-5"></i>Gêmeos<i class="bi bi-dice-3 ms-2 fs-5"></i></a>
                     </div>
 
 
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <!-- Retirei (carousel-control-prev-icon) para por <i> -->
+                    <span class="" aria-hidden="true"><i class="bi bi-caret-left-square fs-1"></i></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
+
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <!-- Retirei (carousel-control-prev-icon) para por <i> -->
+                    <span class="" aria-hidden="true"><i class="bi bi-caret-right-square fs-1"></i></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -86,7 +107,76 @@
         </section>
 
 
+        <!-- ALERTA in ------------------------------------------------------------------->
+        <section class="container mt-4">
+            <div class="alert alert-success text-center" role="alert">
+                <strong><i class="bi bi-truck me-3 fs-4 "></i>Frete Grátis </strong>para compras acima de R$ 150,00.
+            </div>
+        </section>
 
+        <!-- CARD in ------------------------------------------------------------------->
+        <section class="container text-center mt-5" id="categoria">
+            <!-- Titulo -->
+            <div>
+                <h2 class="fw-bold">Nossas Categorias</h2>
+                <p class="text-secondary">Encontre tudo o que precisa para deixar seu espaço mais verde.</p>
+            </div>
+
+            <div class="row mb-5">
+                <!-- CARD01 -->
+                <div class="col col-md">
+
+                    <!----------------------->
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <i class="bi bi-flower1 fs-1 text-success"></i>
+                            <h5 class="card-title">Plantas</h5>
+                            <p class="card-text">Para ambientes internos e externos.</p>
+                        </div>
+                    </div>
+                    <!----------------------->
+
+                </div>
+                <!-- CARD02 -->
+                <div class="col col-md">
+                    <!----------------------->
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <i class="bi bi-flower1 fs-1 text-success"></i>
+                            <h5 class="card-title">Plantas</h5>
+                            <p class="card-text">Bla Bla Bla.</p>
+                        </div>
+                    </div>
+                    <!----------------------->
+                </div>
+                <!-- CARD03 -->
+                <div class="col col-md">
+                    <!----------------------->
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <i class="bi bi-flower1 fs-1 text-success"></i>
+                            <h5 class="card-title">Plantas</h5>
+                            <p class="card-text">Ble Ble Ble.</p>
+                        </div>
+                    </div>
+                    <!----------------------->
+                </div>
+                <!-- CARD04 -->
+                <div class="col col-md">
+                    <!----------------------->
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <i class="bi bi-flower1 fs-1 text-success"></i>
+                            <h5 class="card-title">Plantas</h5>
+                            <p class="card-text">bli bli bli.</p>
+                        </div>
+                    </div>
+                    <!----------------------->
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
