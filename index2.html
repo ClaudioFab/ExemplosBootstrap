@@ -11,11 +11,15 @@
 
     <!-- Para colocar icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Conecção com style2 css -->
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
     <!-- NAVBAR in ------------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+    <!-- corNav conecta ao css -->
+    <nav class="navbar navbar-expand-lg navbar-dark corNav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><i class="bi bi-flower1 me-2"></i>Verde Viva</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -47,7 +51,7 @@
         </div>
     </nav>
 
-
+    <!-- MAIN -->
     <main>
         <!-- CAROUSEL in ------------------------------------------------------------------->
         <section id="inicio">
@@ -105,7 +109,6 @@
 
 
         </section>
-
 
         <!-- ALERTA in ------------------------------------------------------------------->
         <section class="container mt-4">
@@ -182,36 +185,39 @@
 
         </section>
 
-        <!-- CARD ?PRODUTOS -->
-        <section class="container-fluid bg-secondary-subtle text-center p-1">
+        <!-- CARD PRODUTOS RESOLVE DEPOIS ------------------------------------------------------------------->
+        <!-- section produtoCor em css -->
+        <section class="container-fluid text-center p-1 produtoCor">
             <div class="container">
                 <div class="mt-5" id="produtos">
                     <h2 class="fw-bold">Produtos em Destaque</h2>
                     <p class="text-secondary pb-4">Conheça alguns dos produtos selecionados pela Verde Viva.</p>
                 </div>
 
-                <div class="row pb-5">
+                <div class="row pb-5 g-3">
                     <div class="col col-mg">
                         <!-- produto 01 ----------------------------->
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card mx-auto" style="width:25rem">
+                            <img src="img/planta1.jpg" class="card-img-top" alt="Planta_Adao">
                             <div class="card-body">
-                                <h7 class="badge bg-success mb-2">teste</h7>
-                                <h5 class="card-title">Costela-de-Adão</h5>
+                                <h7 class="badge text-bg-danger">Ofertas</h7>
+                                <h5 class="card-title pt-2 mb-2">Costela-de-Adão</h5>
                                 <p class="card-text">Planta ornamental ideal para ambientes internos e decoração.</p>
-                                
-                                <!-- preço antigo -->
-                                <p class="text-secondary text-decoration-line-through">R$99,90</p>
 
+                                <!-- preço antigo -->
+                                <p class="text-secondary text-decoration-line-through mb-1">R$99,90</p>
                                 <!-- preço atual -->
                                 <h4 class="text-success">R$79,90</h4>
 
                                 <div>
                                     <!-- Botão com modal/ data-bs-toggle="modal" é qual tipo/ data-bs-target="#detalhesProduto" é onde conecta-->
-                                    <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#detalhesProduto"><i class="bi bi-eye me-1"></i>Ver detalhes</button>
-                                
+                                    <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                        data-bs-target="#detalhesProduto"><i class="bi bi-eye me-1"></i>Ver
+                                        detalhes</button>
+
                                     <!-- 00 = 553488409359 -->
-                                    <a href="https://wa.me/00" class="btn btn-success w-100 mt-2"><i class="bi bi-whatsapp me-2"></i>Comprar pelo whatsap</a>
+                                    <a href="https://wa.me/00" class="btn btn-success w-100 mt-2"><i
+                                            class="bi bi-whatsapp me-2"></i>Comprar pelo whatsap</a>
                                 </div>
 
                             </div>
@@ -219,16 +225,69 @@
                         <!--  --------------------------------------->
 
                     </div>
-                    <div class="col col-mg">
+
+
+                    <div class="col col-mg ">
                         <!-- produto 02 ----------------------------->
-                        <h7 class="badge bg-success mb-2">teste</h7>
-                        <p>produto 02</p>
+                        <div class="card pb-4 mx-auto" style="width: 25rem;">
+                            <img src="img/planta2.jpg" class="card-img-top" alt="Planta_Adao">
+                            <div class="card-body">
+                                <h7 class="badge text-bg-success ms-auto">Mais vendido</h7>
+                                <h5 class="card-title pt-2">Espada-de-São-Jorge</h5>
+                                <p class="card-text">Planta resistente e de fácil manutenção para diversos ambientes.
+                                </p>
+
+                                <!-- preço antigo -->
+                                <!-- <p class="text-secondary text-decoration-line-through">R$99,90</p> -->
+                                <!-- preço atual -->
+                                <h4 class="text-success">R$49,90</h4>
+
+                                <div class="">
+                                    <!-- Botão com modal/ data-bs-toggle="modal" é qual tipo/ data-bs-target="#detalhesProduto" é onde conecta-->
+                                    <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                        data-bs-target="#detalhesProduto"><i class="bi bi-eye me-1"></i>Ver
+                                        detalhes</button>
+
+                                    <!-- 00 = 553488409359 -->
+                                    <a href="https://wa.me/00" class=" btn btn-success w-100 mt-2"><i
+                                            class="bi bi-whatsapp me-2"></i>Comprar pelo whatsap</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--  --------------------------------------->
 
                     </div>
+
+
                     <div class="col col-mg">
                         <!-- produto 03 ----------------------------->
-                        <h7 class="badge bg-success mb-2">teste</h7>
-                        <p>produto 03</p>
+                        <div class="card mx-auto mt-auto" style="width: 25rem;">
+                            <img src="img/planta3.jpg" class="card-img-top" alt="Planta_Adao">
+                            <div class="card-body">
+                                <h7 class="badge text-bg-warning">Novidade</h7>
+                                <h5 class="card-title pt-2">Kit Jardinagem</h5>
+                                <p class="card-text">Kit básico com ferramentas para manutenção de vasos e jardins.</p>
+
+                                <!-- preço antigo -->
+                                <!-- <p class="text-secondary text-decoration-line-through">R$99,90</p> -->
+                                <!-- preço atual -->
+                                <h4 class="text-success">R$89,90</h4>
+
+                                <div>
+                                    <!-- Botão com modal/ data-bs-toggle="modal" é qual tipo/ data-bs-target="#detalhesProduto" é onde conecta-->
+                                    <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                        data-bs-target="#detalhesProduto"><i class="bi bi-eye me-1"></i>Ver
+                                        detalhes</button>
+
+                                    <!-- 00 = 553488409359 -->
+                                    <a href="https://wa.me/00" class="btn btn-success w-100 mt-2"><i
+                                            class="bi bi-whatsapp me-2"></i>Comprar pelo whatsap</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--  --------------------------------------->
 
 
                     </div>
@@ -247,6 +306,38 @@
         </section>
 
 
+        <!-- MODAL ------------------------------------------------------------------->
+        <section>
+            <div class="modal" tabindex="-1" id="detalhesProduto">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title">Costela de Adão</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+
+                        <div class="modal-body">
+                            <p><strong>Ambiente: </strong>Interno</p>
+                            <p><strong>Iluminação: </strong>Luz indireta</p>
+                            <p><strong>Rega: </strong>Aproximadamente duas vezes por semana.</p>
+                            <p><strong>Tamanho: </strong>Aproximadamente 60 cm. </p>
+                            <p><strong>Preço: </Strong>R$ 79,90</p>
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
 
