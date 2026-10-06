@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!-- NAVBAR in ------------------------------------------------------------------->
+    <!-- NAVBAR in ------------------------------------------------------------------------------------>
     <!-- corNav conecta ao css -->
     <nav class="navbar navbar-expand-lg navbar-dark corNav">
         <div class="container-fluid">
@@ -53,7 +53,7 @@
 
     <!-- MAIN -->
     <main>
-        <!-- CAROUSEL in ------------------------------------------------------------------->
+        <!-- CAROUSEL in ------------------------------------------------------------------------------>
         <section id="inicio">
 
             <div id="carouselExample" class="carousel slide">
@@ -110,14 +110,14 @@
 
         </section>
 
-        <!-- ALERTA in ------------------------------------------------------------------->
+        <!-- ALERTA in -------------------------------------------------------------------------------->
         <section class="container mt-4">
             <div class="alert alert-success text-center" role="alert">
                 <strong><i class="bi bi-truck me-3 fs-4 "></i>Frete Grátis </strong>para compras acima de R$ 150,00.
             </div>
         </section>
 
-        <!-- CARD CATEGORIAS in ------------------------------------------------------------------->
+        <!-- CARD CATEGORIAS in ----------------------------------------------------------------------->
         <section class="container text-center mt-5" id="categoria">
             <!-- Titulo -->
             <div>
@@ -161,7 +161,7 @@
                     <!----------------------->
                     <div class="card " style="width: 18rem;">
                         <div class="card-body">
-                            <i class="bi bi-droplet fs-1 text-success"></i>
+                            <i class="bi bi-tools fs-1 text-success"></i>
                             <h5 class="card-title">Ferramentas</h5>
                             <p class="card-text">Ferramentas para cuidar do seu jardim.</p>
                         </div>
@@ -185,10 +185,11 @@
 
         </section>
 
-        <!-- CARD PRODUTOS RESOLVE DEPOIS ------------------------------------------------------------------->
+        <!-- CARD PRODUTOS ---------------------------------------------------------------------------->
         <!-- section produtoCor em css -->
         <section class="container-fluid text-center p-1 produtoCor">
             <div class="container">
+                <!-- Título -->
                 <div class="mt-5" id="produtos">
                     <h2 class="fw-bold">Produtos em Destaque</h2>
                     <p class="text-secondary pb-4">Conheça alguns dos produtos selecionados pela Verde Viva.</p>
@@ -197,28 +198,33 @@
                 <div class="row pb-5 g-3">
                     <div class="col col-mg">
                         <!-- produto 01 ----------------------------->
-                        <div class="card mx-auto" style="width:25rem">
-                            <img src="img/planta1.jpg" class="card-img-top" alt="Planta_Adao">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="img/planta1.jpg" class="card-img-top" style="height: 220px; object-fit: cover;">
                             <div class="card-body">
-                                <h7 class="badge text-bg-danger">Ofertas</h7>
-                                <h5 class="card-title pt-2 mb-2">Costela-de-Adão</h5>
+                                <span class="badge text-bg-danger">Ofertas</span>
+                                <h5 class="card-title pt-3">Costela de Adão</h5>
                                 <p class="card-text">Planta ornamental ideal para ambientes internos e decoração.</p>
 
-                                <!-- preço antigo -->
-                                <p class="text-secondary text-decoration-line-through mb-1">R$99,90</p>
-                                <!-- preço atual -->
-                                <h4 class="text-success">R$79,90</h4>
+                                <!-- Preço Antigo -->
+                                <p class="text-secondary text-decoration-line-through mb-0">R$ 99,90</p>
+
+                                <!-- Preço atual -->
+                                <h4 class="text-success">R$ 79,90</h4>
 
                                 <div>
-                                    <!-- Botão com modal/ data-bs-toggle="modal" é qual tipo/ data-bs-target="#detalhesProduto" é onde conecta-->
                                     <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                                        data-bs-target="#detalhesProduto"><i class="bi bi-eye me-1"></i>Ver
-                                        detalhes</button>
+                                        data-bs-target="#detalhesProduto">
 
-                                    <!-- 00 = 553488409359 -->
-                                    <a href="https://wa.me/00" class="btn btn-success w-100 mt-2"><i
-                                            class="bi bi-whatsapp me-2"></i>Comprar pelo whatsap</a>
+                                        <i class="bi bi-eye me-1"></i>
+                                        Ver detalhes
+                                    </button>
+                                    <a href="https://wa.me/5534955884411?text=Olá%20tenho%20interesse%20na%20costela%20de%20Adão."
+                                        target="_blank" class="btn btn-success w-100 mt-2">
+                                        <i class="bi bi-whatsapp"></i>
+                                        Comprar pelo WhatsApp
+                                    </a>
                                 </div>
+
 
                             </div>
                         </div>
@@ -229,30 +235,33 @@
 
                     <div class="col col-mg ">
                         <!-- produto 02 ----------------------------->
-                        <div class="card pb-4 mx-auto" style="width: 25rem;">
-                            <img src="img/planta2.jpg" class="card-img-top" alt="Planta_Adao">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="img/planta2.jpg" class="card-img-top" style="height: 220px; 
+                            object-fit: cover;">
                             <div class="card-body">
-                                <h7 class="badge text-bg-success ms-auto">Mais vendido</h7>
-                                <h5 class="card-title pt-2">Espada-de-São-Jorge</h5>
-                                <p class="card-text">Planta resistente e de fácil manutenção para diversos ambientes.
-                                </p>
+                                <span class="badge text-bg-success ms-auto">Mais vendido</span>
+                                <h5 class="card-title pt-3">Espada-de-São-Jorge</h5>
+                                <p class="card-text">Planta de fácil manutenção para diversos ambientes.</p>
 
-                                <!-- preço antigo -->
-                                <!-- <p class="text-secondary text-decoration-line-through">R$99,90</p> -->
-                                <!-- preço atual -->
-                                <h4 class="text-success">R$49,90</h4>
+                                <!-- Preço Antigo -->
+                                <p class="text-secondary text-decoration-line-through mb-0">R$ 59,90</p>
 
-                                <div class="">
-                                    <!-- Botão com modal/ data-bs-toggle="modal" é qual tipo/ data-bs-target="#detalhesProduto" é onde conecta-->
+                                <!-- Preço atual -->
+                                <h4 class="text-success">R$ 49,90</h4>
+
+                                <div>
                                     <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                                        data-bs-target="#detalhesProduto"><i class="bi bi-eye me-1"></i>Ver
-                                        detalhes</button>
+                                        data-bs-target="#detalhesProduto">
 
-                                    <!-- 00 = 553488409359 -->
-                                    <a href="https://wa.me/00" class=" btn btn-success w-100 mt-2"><i
-                                            class="bi bi-whatsapp me-2"></i>Comprar pelo whatsap</a>
+                                        <i class="bi bi-eye me-1"></i>
+                                        Ver detalhes
+                                    </button>
+                                    <a href="https://wa.me/5534955884411?text=Olá%20tenho%20interesse%20na%20costela%20de%20Adão."
+                                        target="_blank" class="btn btn-success w-100 mt-2">
+                                        <i class="bi bi-whatsapp"></i>
+                                        Comprar pelo WhatsApp
+                                    </a>
                                 </div>
-
                             </div>
                         </div>
                         <!--  --------------------------------------->
@@ -262,28 +271,34 @@
 
                     <div class="col col-mg">
                         <!-- produto 03 ----------------------------->
-                        <div class="card mx-auto mt-auto" style="width: 25rem;">
-                            <img src="img/planta3.jpg" class="card-img-top" alt="Planta_Adao">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="img/planta3.jpg" class="card-img-top" alt="..."
+                                style="height: 220px; object-fit: cover;">
                             <div class="card-body">
-                                <h7 class="badge text-bg-warning">Novidade</h7>
-                                <h5 class="card-title pt-2">Kit Jardinagem</h5>
+                                <span class="badge text-bg-warning">Novidade</span>
+                                <h5 class="card-title pt-3">Kit Jardinagem</h5>
                                 <p class="card-text">Kit básico com ferramentas para manutenção de vasos e jardins.</p>
 
-                                <!-- preço antigo -->
-                                <!-- <p class="text-secondary text-decoration-line-through">R$99,90</p> -->
-                                <!-- preço atual -->
-                                <h4 class="text-success">R$89,90</h4>
+                                <!-- Preço Antigo -->
+                                <p class="text-secondary text-decoration-line-through mb-0">R$ 99,90</p>
+
+                                <!-- Preço atual -->
+                                <h4 class="text-success">R$ 89,90</h4>
 
                                 <div>
-                                    <!-- Botão com modal/ data-bs-toggle="modal" é qual tipo/ data-bs-target="#detalhesProduto" é onde conecta-->
                                     <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                                        data-bs-target="#detalhesProduto"><i class="bi bi-eye me-1"></i>Ver
-                                        detalhes</button>
+                                        data-bs-target="#detalhesProduto">
 
-                                    <!-- 00 = 553488409359 -->
-                                    <a href="https://wa.me/00" class="btn btn-success w-100 mt-2"><i
-                                            class="bi bi-whatsapp me-2"></i>Comprar pelo whatsap</a>
+                                        <i class="bi bi-eye me-1"></i>
+                                        Ver detalhes
+                                    </button>
+                                    <a href="https://wa.me/5534955884411?text=Olá%20tenho%20interesse%20na%20costela%20de%20Adão."
+                                        class="btn btn-success w-100 mt-2">
+                                        <i class="bi bi-whatsapp"></i>
+                                        Comprar pelo WhatsApp
+                                    </a>
                                 </div>
+
 
                             </div>
                         </div>
@@ -305,41 +320,185 @@
 
         </section>
 
-
-        <!-- MODAL ------------------------------------------------------------------->
+        <!-- MODAL PRODUTOS --------------------------------------------------------------------------->
         <section>
             <div class="modal" tabindex="-1" id="detalhesProduto">
                 <div class="modal-dialog">
                     <div class="modal-content">
-
                         <div class="modal-header">
                             <h5 class="modal-title">Costela de Adão</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-
-
                         <div class="modal-body">
                             <p><strong>Ambiente: </strong>Interno</p>
                             <p><strong>Iluminação: </strong>Luz indireta</p>
                             <p><strong>Rega: </strong>Aproximadamente duas vezes por semana.</p>
                             <p><strong>Tamanho: </strong>Aproximadamente 60 cm. </p>
-                            <p><strong>Preço: </Strong>R$ 79,90</p>
+                            <p><strong>Preço: </strong>R$ 79,90</p>
                         </div>
-
-
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            <a href="https://wa.me/5534955884411?text=Olá%20tenho%20interesse%20na%20costela%20de%20Adão."
+                                target="_blank" class="btn btn-success mt-2">
+                                <i class="bi bi-whatsapp"></i>
+                                Comprar
+                            </a>
                         </div>
-
-
                     </div>
                 </div>
             </div>
 
         </section>
+
+        <!-- ACCORDION--------------------------------------------------------------------------------->
+        <section class="container">
+            <!--  -------------------------->
+            <!-- Título -->
+            <div class="container text-center mt-5" id="duvidas">
+                <!-- Titulo -->
+                <div class="mt-5" id="produtos">
+                    <h2 class="fw-bold">Perguntas frequentes</h2>
+                </div>
+            </div>
+
+            <!-- Accordion Itens ------------------------->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                <!-- collapseOne ------------------------->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Vocês realizam entregas ?
+                        </button>
+                    </h2>
+                    <!-- Resposta 1 -->
+                    <div id="flush-collapseOne" class="accordion-collapse collapse text-center"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Sim. Consulte nossa equipe pelo WhatsApp para verificar a disponibilidade e verificar.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- collapseTwo ------------------------->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Como escolher uma planta ?
+                        </button>
+                    </h2>
+                    <!-- Resposta 2 -->
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse text-center"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Nossa equipe pode indicar plantas considerando a iluminação, espaço
+                            disponivel e sua rotina de cuidados.</div>
+                    </div>
+                </div>
+
+                <!-- collapseThree ------------------------->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Quais são as formas de pagamento ?
+                        </button>
+                    </h2>
+                    <!-- Resposta 3 -->
+                    <div id="flush-collapseThree" class="accordion-collapse collapse text-center"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Entre em contato com a nossa equipe para consultar as formas de
+                            pagamento disponiveis para seu pedido.</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--  -------------------------->
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="container-fluid pt-2 produtoCor">
+            <!-- Título -->
+            <div class="container text-center mt-5" id="contatos">
+                <!-- Titulo -->
+                <div class="mt-5" id="produtos">
+                    <h2 class="fw-bold">Entre em contato</h2>
+                    <p class="text-secondary pb-4">Envie sua dúvida para nossa equipe.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- form -->
+                <div class="col-12 col-md-4 mb-5">
+
+                    <!-- Nome -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Digite seu nome completo">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+
+                    <!-- Telefone -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Telefone</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                            placeholder="(XX) XXXX-XXXX">
+                    </div>
+
+                    <!-- Duvidas -->
+                    <label for="exampleFormControlInput1" class="form-label">Dúvidas</label>
+                    <select name="" id="" class="form-select mb-3">
+                        <option>Dúvida sobre produto</option>
+                        <option>Entrega</option>
+                        <option>Pagamento</option>
+
+                    </select>
+
+                    <!-- Mensagem -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1"
+                            class="form-label d-flex justify-content-start">Mensagem</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <br>
+                    <button class="btn btn-success w-100 "><i class="bi bi-send me-2"></i>Enviar mensagem</button>
+
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
+    <!-- FOOTER Rodapé -->
+    <footer class="bg-dark text-white p-3 pt-4">
+
+        <div class="container">
+            <div class="row">
+                <div class="col col-md">
+                    <h5><i class="bi bi-flower1 me-2"></i>Verde Viva</h5>
+                    <p class="">Plantas & Jardinagem</p>
+                </div>
+                <div class="col col-md text-md-end">
+                    <p>Atendimento: Segunda a Sábado</p>
+                    <p>© 2026 VerdeViva - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- Para conectar ao bootstrap -->
     <!-- Incluir Bootstrap JS --------------------------->
